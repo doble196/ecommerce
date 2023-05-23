@@ -19,7 +19,7 @@ function Product({ product }) {
             <Rating
               value={product.rating}
               text={`${product.numReviews} reviews`}
-              color={"#f8e825"}
+              color={"#40E0D0"}
             />
           </div>
         </Card.Text>
