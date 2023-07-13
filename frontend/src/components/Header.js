@@ -4,7 +4,6 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { LinkContainer } from "react-router-bootstrap";
-import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -23,22 +22,28 @@ function Header() {
                   <i className="fas fa-shopping-cart"></i> Cart
                 </Nav.Link>
               </LinkContainer>
+
               <LinkContainer to="/login">
                 <Nav.Link>
                   <i className="fas fa-user"></i> Sign In
                 </Nav.Link>
               </LinkContainer>
+
               <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                 <LinkContainer to="/action">
                   <NavDropdown.Item>Action</NavDropdown.Item>
                 </LinkContainer>
+
                 <LinkContainer to="/another-action">
                   <NavDropdown.Item>Another action</NavDropdown.Item>
                 </LinkContainer>
+
                 <LinkContainer to="/something">
                   <NavDropdown.Item>Something</NavDropdown.Item>
                 </LinkContainer>
+
                 <NavDropdown.Divider />
+
                 <LinkContainer to="/separated-link">
                   <NavDropdown.Item>Separated link</NavDropdown.Item>
                 </LinkContainer>
